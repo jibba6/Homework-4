@@ -11,4 +11,9 @@ function printScores () {
         olEl.appendChild (liEl)
     };
 };
+function clear () {
+    localStorage.removeItem ("scores")
+    window.location.reload ()
+}
+clearButton.addEventListener ("click" , clear)
 printScores ();
